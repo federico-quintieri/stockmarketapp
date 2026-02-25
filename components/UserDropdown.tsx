@@ -10,6 +10,8 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar"
 import { Button } from "./ui/button";
+import NavItems from "./NavItems";
+import { LogOut } from "lucide-react";
 
 const UserDropdown = () => {
     const router = useRouter();
@@ -56,6 +58,14 @@ const UserDropdown = () => {
                     </div>
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator className="bg-gray-600" />
+                <DropdownMenuItem onClick={handleSignOut} className="text-gray-100 text-md font-medium focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer">
+                    <LogOut className="h-4 w-4 mr-2 hidden sm:block" />
+                    LogOut
+                </DropdownMenuItem>
+                <DropdownMenuSeparator className="hidden sm:block bg-gray-600" />
+                <nav className="sm:hidden">
+                    <NavItems />
+                </nav>
             </DropdownMenuContent>
         </DropdownMenu >
     )
