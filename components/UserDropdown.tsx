@@ -60,7 +60,7 @@ const UserDropdown = () => {
                 <DropdownMenuSeparator className="bg-gray-600" />
                 <DropdownMenuItem onClick={handleSignOut} className="text-gray-100 text-md font-medium focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer">
                     <LogOut className="h-4 w-4 mr-2 hidden sm:block" />
-                    LogOut
+                    Log Out
                 </DropdownMenuItem>
                 <DropdownMenuSeparator className="hidden sm:block bg-gray-600" />
                 <nav className="sm:hidden">
