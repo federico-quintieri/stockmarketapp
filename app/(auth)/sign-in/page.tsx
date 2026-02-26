@@ -54,7 +54,7 @@ const SignIn = () => {
           error={errors.password}
           validation={{ required: 'Password name is required', minLength: 8 }}
         />
-
+ 
         <Button type="submit" disabled={isSubmitting} className="yellow-btn w-full mt-5">
           {isSubmitting ? 'Creating account' : 'Start Your Investing Journey'}
         </Button>
